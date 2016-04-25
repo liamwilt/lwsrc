@@ -1,2 +1,2 @@
 # lwsrc
-Documenting the process and creation of Liam's website.
+Documenting the process and creation of a website.
