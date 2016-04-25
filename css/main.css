@@ -1,0 +1,90 @@
+@font-face {
+  font-family:"Raleway Webfont";
+  src: url('/fonts/raleway/raleway-thin.eot');
+  src: url('/fonts/raleway/raleway-thin.eot?#iefix') format('embedded-opentype'), 
+       url('/fonts/raleway/raleway-thin.woff') format('woff'), 
+       url('/fonts/raleway/raleway-thin.ttf') format('truetype'), 
+       url('/fonts/raleway/raleway-thin.svg#ralewaythin') format('svg');
+}
+
+* {    
+  margin: 0;
+  padding: 0;
+}
+
+body {  
+  background:#e8e8e8;
+}
+
+.bg {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: .25s;
+  pointer-events: none;
+}
+
+h1 {
+  padding-top: 300px;
+  text-align: center;
+  font-family: 'Raleway Webfont';
+  font-weight: 200;
+  font-size: 35px;
+}
+
+li {  
+  list-style:none;
+}
+
+li a { 
+  display:block;
+  float:left;
+  width:20%;
+  padding:25px 0;
+  text-align:center;
+  font-family: 'Raleway Webfont';
+  font-weight:500;
+  letter-spacing:1px;
+  font-size:30px;
+  color:#fff;
+  background:#ccc;
+  text-decoration:none;
+  text-transform:uppercase;
+  transition:.25s;
+}
+
+li a:hover  {
+      margin:-10px 0 0 0;
+}
+
+.menu {  
+      width:500px;
+      margin:40px auto 0 auto;
+      border-radius:2px;
+      overflow:hidden;
+}
+       
+.menu li:first-child a {  background:#d0d0d0 !important;}
+.menu li:nth-child(2) a {  background:#b9b9b9 !important;}
+.menu li:nth-child(3) a {  background:#a2a2a2 !important;}
+.menu li:nth-child(4) a {  background:#8b8b8b !important;}
+.menu li:nth-child(5) a {  background:#747474 !important;}
+
+.menu li:first-child:hover ~ .bg {
+  background: #d0d0d0;  
+}
+.menu li:nth-child(2):hover ~ .bg {
+  background: #b9b9b9;
+}
+.menu li:nth-child(3):hover ~ .bg {
+  background: #a2a2a2;
+}
+.menu li:nth-child(4):hover ~ .bg {
+  background: #8b8b8b;
+}
+.menu li:nth-child(5):hover ~ .bg {
+  background: #747474;
+}
