@@ -7,6 +7,45 @@ body {
   background:#e8e8e8;
 }
 
+h1 {
+  padding: 300px 0px 30px 0px;
+  text-align: center;
+  font-family: Raleway;
+  font-weight: 100;
+  font-size: 35px;
+}
+
+.menu {  
+  text-align: center;
+  border-radius:2px;
+  width:100%;
+  
+}
+
+li {  
+  list-style:none;
+  display: inline-block;
+  
+}
+
+li a { 
+  display: inline-block;
+  padding:25px 25px 25px 25px;
+  margin-left: -4px;
+  letter-spacing:1px;
+  font-family: Raleway;
+  font-weight: 300;
+  font-size:30px;
+  color:#fff;
+  text-decoration:none;
+  text-transform:uppercase;
+  transition:.25s;
+}
+
+/*li a:hover {
+    margin: -10px 0 0 0;
+}*/
+
 .bg {
   position: fixed;
   z-index: -1;
@@ -16,50 +55,6 @@ body {
   left: 0;
   transition: .25s;
   pointer-events: none;
-}
-
-h1 {
-  position: absolute;
-  top: 36%;
-  left: 47%;
-  text-align: center;
-  font-family: Raleway;
-  font-weight: 100;
-  font-size: 35px;
-}
-
-li {  
-  list-style:none;
-}
-
-li a { 
-  float:left;
-  width:20%;
-  padding:30px 0;
-  text-align:center;
-  letter-spacing:1px;
-  font-family: Raleway;
-  font-weight: 300;
-  font-size:30px;
-  color:#fff;
-  background:#ccc;
-  text-decoration:none;
-  text-transform:uppercase;
-  transition:.25s;
-}
-
-li a:hover  {
-      margin:-10px 0 0 0;
-}
-
-.menu {  
-      position: absolute;
-      top: 45%;
-      left: 38%;
-      text-align: center;
-      width:500px;      
-      border-radius:2px;
-      overflow:hidden;
 }
        
 .menu li:first-child a {  background:#d0d0d0 !important;}
