@@ -1,0 +1,75 @@
+* {    
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+body {  
+  background:#e8e8e8;
+
+}
+
+h1 {
+  padding: 200px 0px 20px 0px;
+  text-align: center;
+  font-family: Raleway;
+  font-weight: 100;
+  font-size: 50px;
+}
+
+.menu {  
+  display: inline-block;
+  text-align: center;
+  border-radius:2px; 
+  width: 100px;
+}
+
+li {  
+  list-style:none;
+}
+
+li a { 
+  display: block;
+  padding:25px 25px 25px 25px;
+  letter-spacing:1px;
+  font-family: Raleway;
+  font-weight: 300;
+  font-size:30px;
+  color:#fff;
+  text-decoration:none;
+  text-transform:uppercase;
+  transition:.25s;
+}
+
+.bg {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: .25s;
+  pointer-events: none;
+}
+       
+.menu li:first-child a {  background:#d0d0d0 !important;}
+.menu li:nth-child(2) a {  background:#b9b9b9 !important;}
+.menu li:nth-child(3) a {  background:#a2a2a2 !important;}
+.menu li:nth-child(4) a {  background:#8b8b8b !important;}
+.menu li:nth-child(5) a {  background:#747474 !important;}
+
+.menu li:first-child:hover ~ .bg {
+  background: #d0d0d0;  
+}
+.menu li:nth-child(2):hover ~ .bg {
+  background: #b9b9b9;
+}
+.menu li:nth-child(3):hover ~ .bg {
+  background: #a2a2a2;
+}
+.menu li:nth-child(4):hover ~ .bg {
+  background: #8b8b8b;
+}
+.menu li:nth-child(5):hover ~ .bg {
+  background: #747474;
+}
