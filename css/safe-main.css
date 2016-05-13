@@ -41,10 +41,6 @@ li a {
   color:#fff;
   text-decoration:none;
   text-transform:uppercase;
-  -webkit-transition: .25s;
-  -moz-transition: .25s;
-  -o-transition: .25s;
-  transition: .25s;
 }
 
 .bg {
@@ -54,6 +50,9 @@ li a {
   right: 0;
   bottom: 0;
   left: 0;
+  -webkit-transition: .33s;
+  -moz-transition: .33s;
+  -o-transition: .33s;
   transition: .33s;
   pointer-events: none;
 }
@@ -78,4 +77,10 @@ ul li:nth-child(4):hover ~ .bg {
 }
 ul li:nth-child(5):hover ~ .bg {
   background: #747474;
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
 }
