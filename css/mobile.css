@@ -38,7 +38,10 @@ li a {
   color:#fff;
   text-decoration:none;
   text-transform:uppercase;
-  transition:.25s;
+  -webkit-transition: .33s;
+     -moz-transition: .33s;
+       -o-transition: .33s;
+          transition: .33s;
 }
 
 .bg {
