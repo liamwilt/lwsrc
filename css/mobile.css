@@ -39,9 +39,9 @@ li a {
   text-decoration:none;
   text-transform:uppercase;
   -webkit-transition: .33s;
-     -moz-transition: .33s;
-       -o-transition: .33s;
-          transition: .33s;
+  -moz-transition: .33s;
+  -o-transition: .33s;
+  transition: .33s;
 }
 
 .bg {
@@ -51,7 +51,10 @@ li a {
   right: 0;
   bottom: 0;
   left: 0;
-  transition: .25s;
+  -webkit-transition: .33s;
+  -moz-transition: .33s;
+  -o-transition: .33s;
+  transition: .33s;
   pointer-events: none;
 }
        
