@@ -194,9 +194,9 @@ li a {
   text-decoration:none;
   text-transform:uppercase;
   -webkit-transition: .33s;
-  -moz-transition: .33s;
-  -o-transition: .33s;
-  transition: .33s;
+     -moz-transition: .33s;
+       -o-transition: .33s;
+          transition: .33s;
 }
 
 .bg {
