@@ -16,12 +16,7 @@ h1 {
   font-size: 40px;
 }
 
-nav {
-  overflow: hidden;
-  text-align: center;
-}
-
-ul {  
+.menu {  
   border-radius:2px;
   font-size: 0px;
 }
@@ -51,36 +46,28 @@ li a {
   bottom: 0;
   left: 0;
   -webkit-transition: .33s;
-  -moz-transition: .33s;
-  -o-transition: .33s;
   transition: .33s;
   pointer-events: none;
 }
        
-ul li:first-child a {  background:#d0d0d0 !important;}
-ul li:nth-child(2) a {  background:#b9b9b9 !important;}
-ul li:nth-child(3) a {  background:#a2a2a2 !important;}
-ul li:nth-child(4) a {  background:#8b8b8b !important;}
-ul li:nth-child(5) a {  background:#747474 !important;}
+.menu li:first-child a {  background:#d0d0d0 !important;}
+.menu li:nth-child(2) a {  background:#b9b9b9 !important;}
+.menu li:nth-child(3) a {  background:#a2a2a2 !important;}
+.menu li:nth-child(4) a {  background:#8b8b8b !important;}
+.menu li:nth-child(5) a {  background:#747474 !important;}
 
-ul li:first-child:hover ~ .bg {
+.menu li:first-child:hover ~ .bg {
   background: #d0d0d0;  
 }
-ul li:nth-child(2):hover ~ .bg {
+.menu li:nth-child(2):hover ~ .bg {
   background: #b9b9b9;
 }
-ul li:nth-child(3):hover ~ .bg {
+.menu li:nth-child(3):hover ~ .bg {
   background: #a2a2a2;
 }
-ul li:nth-child(4):hover ~ .bg {
+.menu li:nth-child(4):hover ~ .bg {
   background: #8b8b8b;
 }
-ul li:nth-child(5):hover ~ .bg {
+.menu li:nth-child(5):hover ~ .bg {
   background: #747474;
-}
-
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
 }
