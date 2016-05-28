@@ -23,7 +23,7 @@ body {
     z-index: 1001;
     left: 50%;
     top: 50%;
-    margin-top: -50px;
+    margin-top: -55px;
     margin-left: -250px;
     width: 100px;
     height: 100px;
@@ -80,71 +80,71 @@ body {
               transform: translate(100px, 100px) rotate(0.25turn);
       -webkit-transform-origin: 100% 0;
          -moz-transform-origin: 100% 0;
-           -o-transform-origin: 100% 0;
-              transform-origin: 100% 0;
+              -o-transform-origin: 100% 0;
+                   transform-origin: 100% 0;
       background: #b9b9b9;
     }
     50% {
       -webkit-transform: translate(100px, 100px) rotate(0.5turn);
          -moz-transform: translate(100px, 100px) rotate(0.5turn);
-           -o-transform: translate(100px, 100px) rotate(0.5turn);
-              transform: translate(100px, 100px) rotate(0.5turn);
+              -o-transform: translate(100px, 100px) rotate(0.5turn);
+                   transform: translate(100px, 100px) rotate(0.5turn);
       -webkit-transform-origin: 100% 0;
          -moz-transform-origin: 100% 0;
-           -o-transform-origin: 100% 0;
-              transform-origin: 100% 0;
+              -o-transform-origin: 100% 0;
+                   transform-origin: 100% 0;
       -webkit-animation-timing-function: step-end;
          -moz-animation-timing-function: step-end;
-           -o-animation-timing-function: step-end;
-              animation-timing-function: step-end;
+              -o-animation-timing-function: step-end;
+                   animation-timing-function: step-end;
       background: #a2a2a2;
     }
     50.01% {
       -webkit-transform: translate(300px, 100px) rotate(0.5turn);
          -moz-transform: translate(300px, 100px) rotate(0.5turn);
-           -o-transform: translate(300px, 100px) rotate(0.5turn);
-              transform: translate(300px, 100px) rotate(0.5turn);
+              -o-transform: translate(300px, 100px) rotate(0.5turn);
+                   transform: translate(300px, 100px) rotate(0.5turn);
       -webkit-transform-origin: 0 0;
          -moz-transform-origin: 0 0;
-           -o-transform-origin: 0 0;
-              transform-origin: 0 0;
+              -o-transform-origin: 0 0;
+                   transform-origin: 0 0;
       background: #a2a2a2;
     }
     75% {
       -webkit-transform: translate(300px, 100px) rotate(0.75turn);
          -moz-transform: translate(300px, 100px) rotate(0.75turn);
-           -o-transform: translate(300px, 100px) rotate(0.75turn);
-              transform: translate(300px, 100px) rotate(0.75turn);
+              -o-transform: translate(300px, 100px) rotate(0.75turn);
+                  transform: translate(300px, 100px) rotate(0.75turn);
       -webkit-transform-origin: 0 0;
          -moz-transform-origin: 0 0;
-           -o-transform-origin: 0 0;
-              transform-origin: 0 0;
+              -o-transform-origin: 0 0;
+                   transform-origin: 0 0;
       -webkit-animation-timing-function: step-end;
          -moz-animation-timing-function: step-end;
-           -o-animation-timing-function: step-end;
-              animation-timing-function: step-end;
+              -o-animation-timing-function: step-end;
+                   animation-timing-function: step-end;
       background: #8b8b8b;
     }
     75.01% {
       -webkit-transform: translate(400px, 0) rotate(0.75turn);
          -moz-transform: translate(400px, 0) rotate(0.75turn);
-           -o-transform: translate(400px, 0) rotate(0.75turn);
-              transform: translate(400px, 0) rotate(0.75turn);
+              -o-transform: translate(400px, 0) rotate(0.75turn);
+                  transform: translate(400px, 0) rotate(0.75turn);
       -webkit-transform-origin: 0 100%;
          -moz-transform-origin: 0 100%;
-           -o-transform-origin: 0 100%;
-              transform-origin: 0 100%;
+              -o-transform-origin: 0 100%;
+                   transform-origin: 0 100%;
       background: #8b8b8b;
     }
     100% {
       -webkit-transform: translate(400px, 0) rotate(1turn);
          -moz-transform: translate(400px, 0) rotate(1turn);
-           -o-transform: translate(400px, 0) rotate(1turn);
-              transform: translate(400px, 0) rotate(1turn);
+              -o-transform: translate(400px, 0) rotate(1turn);
+                   transform: translate(400px, 0) rotate(1turn);
       -webkit-transform-origin: 0 100%;
          -moz-transform-origin: 0 100%;
-           -o-transform-origin: 0 100%;
-              transform-origin: 0 100%;
+              -o-transform-origin: 0 100%;
+                   transform-origin: 0 100%;
       background: #747474;
     }
   }
@@ -152,13 +152,13 @@ body {
 .loaded #loader {
     opacity: 0;
     -webkit-transition: all 0.3s ease-out;  
-            transition: all 0.3s ease-out;
+                 transition: all 0.3s ease-out;
 }
   
 .loaded #loader-wrapper {
     visibility: hidden;
     -webkit-transition: all 0.3s 1s ease-out;  
-            transition: all 0.3s 1s ease-out;
+                 transition: all 0.3s 1s ease-out;
 }
 
 h1 {
@@ -194,10 +194,6 @@ li a {
   color:#fff;
   text-decoration:none;
   text-transform:uppercase;
-  -webkit-transition: .25s;
-  -moz-transition: .25s;
-  -o-transition: .25s;
-  transition: .25s;
 }
 
 .bg {
@@ -208,8 +204,6 @@ li a {
   bottom: 0;
   left: 0;
   -webkit-transition: .33s;
-  -moz-transition: .33s;
-  -o-transition: .33s;
   transition: .33s;
   pointer-events: none;
 }
