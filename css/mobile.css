@@ -44,8 +44,8 @@ body {
   font-weight: 100;
   font-family: Raleway;
   background: #e8e8e8;
-  width: 75px;
-  height: 75px;
+  width: 10vw;
+  height: 10vh;
   border-radius: 0%;
 }
 
@@ -68,11 +68,12 @@ body {
   font-weight: 200;
   font-family: Raleway;
   background: #d0d0d0;
-  width: 75px;
-  height: 75px;
+  width: 10vw;
+  height: 10vh;
   border-radius: 0%;
   box-shadow: 0 0 200px #d0d0d0, 0 0 300px #d0d0d0;
 }
+
 #circ:nth-of-type(3) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -92,11 +93,12 @@ body {
   font-weight: 200;
   font-family: Raleway;
   background: #b9b9b9;
-  width: 75px;
-  height: 75px;
+  width: 10vw;
+  height: 10vh;
   border-radius: 0%;
   box-shadow: 0 0 200px #b9b9b9, 0 0 300px #b9b9b9;
 }
+
 #circ:nth-of-type(4) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -116,11 +118,12 @@ body {
   font-weight: 200;
   font-family: Raleway;
   background: #a2a2a2;
-  width: 75px;
-  height: 75px;
+  width: 10vw;
+  height: 10vh;
   border-radius: 0%;
   box-shadow: 0 0 200px #a2a2a2, 0 0 300px #a2a2a2;
 }
+
 #circ:nth-of-type(5) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -141,11 +144,12 @@ body {
   font-weight: 200;
   font-family: Raleway;
   background: #8b8b8b;
-  width: 75px;
-  height: 75px;
+  width: 10vw;
+  height: 10vh;
   border-radius: 0%;
   box-shadow: 0 0 200px #8b8b8b, 0 0 300px #8b8b8b;
 }
+
 #circ:nth-of-type(6) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -166,8 +170,8 @@ body {
   font-weight: 200;
   font-family: Raleway;
   background: #747474;
-  width: 75px;
-  height: 75px;
+  width: 10vw;
+  height: 10vh;
   border-radius: 0%;
   box-shadow: 0 0 200px #747474, 0 0 300px #747474;
 }
