@@ -8,106 +8,89 @@ body {
   background:#e8e8e8;
 }
 
-#loader-wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1000;
-    background:#e8e8e8;
-}
 #loader {
-    position: absolute;
-    box-sizing: border-box;
-    z-index: 1001;
-    left: 50%;
-    top: 50%;
-    margin-top: -55px;
-    margin-left: -250px;
-    width: 90px;
-    height: 90px;
-    border-radius: 2px;
-    background: #d0d0d0;
-    transform-origin: 100% 100%;
-    animation: turnMove 3500ms infinite alternate cubic-bezier(0.75, 0, 0.175, 1);
-    animation-play-state: play;
-    animation-delay: 0ms;
-  }
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  color: #000;
+  background:#e8e8e8;
+}
 
-  @keyframes turnMove {
+#loader-inner {
+  transform: translateY(-50%);
+}
+
+#loader-inner label {
+  font-family: Raleway;
+  font-weight: 100;
+  font-size: 35px;
+  padding: 100vh 0 0 0;
+  z-index: 1001;
+  opacity: 0;
+  display:inline-block;
+}
+
+@keyframes ani {
   0% {
-    transform: translate(0, 0) rotate(0turn);
-    transform-origin: 100% 100%;
+    opacity: 0;
+    transform: translateX(-300px);
   }
-  25% {
-    transform: translate(0, 0) rotate(0.25turn);
-    transform-origin: 100% 100%;
-    animation-timing-function: step-end;
-    background: #b9b9b9;
+  33% {
+    opacity: 1;
+    transform: translateX(0px);
   }
-  25.01% {
-    transform: translate(90px, 90px) rotate(0.25turn);
-    transform-origin: 100% 0;
-    background: #b9b9b9;
-  }
-  50% {
-    transform: translate(90px, 90px) rotate(0.5turn);
-    transform-origin: 100% 0;
-    animation-timing-function: step-end;
-    background: #a2a2a2;
-  }
-  50.01% {
-    transform: translate(270px, 90px) rotate(0.5turn);
-    transform-origin: 0 0;
-    background: #a2a2a2;
-  }
-  75% {
-    transform: translate(270px, 90px) rotate(0.75turn);
-    transform-origin: 0 0;
-    animation-timing-function: step-end;
-    background: #8b8b8b;
-  }
-  75.01% {
-    transform: translate(360px, 0) rotate(0.75turn);
-    transform-origin: 0 100%;
-    background: #8b8b8b;
+  66% {
+    opacity: 1;
+    transform: translateX(0px);
   }
   100% {
-    transform: translate(360px, 0) rotate(1turn);
-    transform-origin: 0 100%;
-    background: #747474;
+    opacity: 0;
+    transform: translateX(300px);
   }
+}
+
+#loader-inner label:nth-child(7) {
+  animation: ani 3s infinite ease-in-out;
+}
+
+#loader-inner label:nth-child(6) {
+  animation: ani 3s 100ms infinite ease-in-out;
+}
+
+#loader-inner label:nth-child(5) {
+  animation: ani 3s 200ms infinite ease-in-out;
+}
+
+#loader-inner label:nth-child(4) {
+  animation: ani 3s 300ms infinite ease-in-out;
+}
+
+#loader-inner label:nth-child(3) {
+  animation: ani 3s 400ms infinite ease-in-out;
+}
+
+#loader-inner label:nth-child(2) {
+  animation: ani 3s 500ms infinite ease-in-out;
+}
+
+#loader-inner label:nth-child(1) {
+  animation: ani 3s 600ms infinite ease-in-out;
 }
 
 .loaded #loader {
     opacity: 0;
-    -webkit-transition: all 0.3s ease-out;  
-            transition: all 0.3s ease-out;
-}
-  
-.loaded #loader-wrapper {
     visibility: hidden;
-    -webkit-transition: all 0.3s 1s ease-out;  
-            transition: all 0.3s 1s ease-out;
+    transition: all 0.5s 1s ease-out;
 }
 
-.loaded #body{
-  visibility: visible;
-  -webkit-transition: all 0.3s ease-out;  
-          transition: all 0.3s ease-out;
+.loaded #loader-inner {
+    opacity: 0;  
+    transition: all 0.5s ease-out;
 }
 
-h1 {
-  padding: 38vh 0px 25px 0px;
-  text-align: center;
-  font-family: Raleway;
-  font-weight: 100;
-  font-size: 35px;
-}
-
-ul {  
-  border-radius:2px;
+ul {
+  padding: 50vh 0 0 0;
   font-size: 0px;
 }
 
@@ -117,15 +100,15 @@ li {
 }
 
 li a { 
-  padding:25px 23px 25px 23px;
-  display: block;
+  padding:1.5rem 1.5rem 1.5rem 1.5rem;
   letter-spacing:1px;
   font-family: Raleway;
   font-weight: 300;
-  font-size:30px;
+  font-size:35px;
   color:#fff;
   text-decoration:none;
   text-transform:uppercase;
+  transition: .33s;
 }
 
 .bg {
@@ -135,7 +118,6 @@ li a {
   right: 0;
   bottom: 0;
   left: 0;
-  -webkit-transition: .33s;
   transition: .33s;
   pointer-events: none;
 }
