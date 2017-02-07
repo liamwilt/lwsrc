@@ -36,7 +36,7 @@
 <header>
   <div class="inner">
     <div> 
-      <a class="logo" href="returnhome">W</a>
+      <a class="logo" href="Home">W</a>
     </div>
     <nav role='navigation'>
       <ul>
@@ -51,7 +51,7 @@
 </header>
 <section>
   <div class="inner">
-    <h1>research&development</h1>
+    <h1>rest&relaxation</h1>
     <p><span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo cupiditate voluptates eveniet reiciendis eum dicta non obcaecati corrupti harum deserunt deleniti quae aspernatur porro labore ipsum possimus tempore tenetur consequuntur!</span>
     </p>
   </div>

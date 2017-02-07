@@ -4,7 +4,7 @@
     <title>Violetville</title>
     <meta charset="utf-8"/>
     <link href='https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="av.css">
+    <link rel="stylesheet" type="text/css" href="returnmain.css">
     <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/images/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png">
@@ -22,38 +22,25 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="/images/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script>
-      $( document ).ready(function() {
-        $('[role=navigation] a').hover(function(){
-        $(this).closest('header').css('background-color', $(this).css('background-color'));
-        },function(){
-        $(this).closest('header').css('background-color', '#e8e8e8');
-        });
-      });
-    </script>
 </head>
-<header>
-  <div class="inner">
-    <div> 
-      <a class="logo" href="returnhome">W</a>
-    </div>
-    <nav role='navigation'>
-      <ul>
-        <li><a href="me">ME</a></li>
-        <li><a href="cv">CV</a></li>
-        <li><a href="av">AV</a></li>
-        <li><a href="rd">RD</a></li>
-        <li><a href="rr">RR</a></li>
-      </ul>
-    </nav>  
+
+<div id="loader">
+  <div id="loader-inner">
+    <label>	V</label>
+    <label>	V</label>
   </div>
-</header>
-<section>
-  <div class="inner">
-    <h1>research&development</h1>
-    <p><span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo cupiditate voluptates eveniet reiciendis eum dicta non obcaecati corrupti harum deserunt deleniti quae aspernatur porro labore ipsum possimus tempore tenetur consequuntur!</span>
-    </p>
-  </div>
-</section>
+</div>
+<div id ="body">
+  <ul>
+    <li><a href="me">me</a>
+    <li><a href="cv">cv</a>
+    <li><a href="av">av</a>
+    <li><a href="rd">rd</a>
+    <li><a href="rr">rr</a>
+    <li class="bg"></li>
+  </ul>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+	<script src="main.js"></script>
+</div>
 </html>

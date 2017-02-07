@@ -1,0 +1,125 @@
+* {    
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+body {  
+  background:#e8e8e8;
+}
+
+#loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  color: #9a32cd;
+  background:#e8e8e8;
+}
+
+#loader-inner {
+  transform: translateY(-50%);
+}
+
+#loader-inner label {
+  font-family: Raleway;
+  font-weight: 100;
+  font-size: 35px;
+  padding: 100vh 0 0 0;
+  z-index: 1001;
+  opacity: 0;
+  display:inline-block;
+}
+
+@keyframes ani {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  33% {
+    opacity: 0;
+    transform: translateX(0px);
+  }
+  66% {
+    opacity: 0;
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+}
+
+#loader-inner label:nth-child(2) {
+  animation: ani 0.5s 500ms infinite ease-in-out;
+}
+
+#loader-inner label:nth-child(1) {
+  animation: ani 0.5s 600ms infinite ease-in-out;
+}
+
+.loaded #loader {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s 1s ease-out;
+}
+
+.loaded #loader-inner {
+    opacity: 0;  
+    transition: all 0.5s ease-out;
+}
+
+ul {
+  padding: 48vh 0 0 0;
+  font-size: 0;
+}
+
+li {  
+  list-style:none;
+  display: inline-block;
+}
+
+li a { 
+  padding:1.5rem 1.5rem 1.5rem 1.5rem;
+  letter-spacing:1px;
+  font-family: Raleway;
+  font-weight: 300;
+  font-size:35px;
+  color:#fff;
+  text-decoration:none;
+  text-transform:uppercase;
+  transition: .33s;
+}
+
+.bg {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: .33s;
+  pointer-events: none;
+}
+       
+ul li:first-child a {  background:#d0d0d0 !important;}
+ul li:nth-child(2) a {  background:#b9b9b9 !important;}
+ul li:nth-child(3) a {  background:#a2a2a2 !important;}
+ul li:nth-child(4) a {  background:#8b8b8b !important;}
+ul li:nth-child(5) a {  background:#747474 !important;}
+
+ul li:first-child:hover ~ .bg {
+  background: #d0d0d0;  
+}
+ul li:nth-child(2):hover ~ .bg {
+  background: #b9b9b9;
+}
+ul li:nth-child(3):hover ~ .bg {
+  background: #a2a2a2;
+}
+ul li:nth-child(4):hover ~ .bg {
+  background: #8b8b8b;
+}
+ul li:nth-child(5):hover ~ .bg {
+  background: #747474;
+}
