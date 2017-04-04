@@ -4,6 +4,7 @@
 /**
 * Generic 
 */
+
 html, body {
   min-height: 100%;
   height: 100%;
@@ -30,25 +31,102 @@ a {
 }
 
 #loader {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 0;
-  margin: 0;
-  z-index: 1000;
-  width: 100%;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100%;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
+  width: 100%;
+  background-color: #ccc/*#d8c4ed*/;
+  margin: 0;
+  z-index:1000;
+}
+
+#loago {
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+
+#loago div {
+  position: absolute;
+  width: 128px;
+  height: 128px;
+  margin: 16px;
+  border-radius: 13%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  animation: 3s cubic-bezier(0.66, -0.7, 0.27, 1.6) infinite;
+}
+#loago div:nth-child(1) {
+  background-color: #999;
+  -webkit-animation-name: rotate-5;
+          animation-name: rotate-5;
+}
+#loago div:nth-child(2) {
+  background-color: #a6a6a6;
+  -webkit-animation-name: rotate-4;
+          animation-name: rotate-4;
+}
+#loago div:nth-child(3) {
+  background-color: #b3b3b3;
+  -webkit-animation-name: rotate-3;
+          animation-name: rotate-3;
+}
+#loago div:nth-child(4) {
+  background-color: #bfbfbf;
+  -webkit-animation-name: rotate-2;
+          animation-name: rotate-2;
+}
+#loago div:nth-child(5) {
+  background-color: #ccc;
+  -webkit-animation-name: rotate-1;
+          animation-name: rotate-1;
+}
+
+
+@keyframes rotate-1 {
+  to {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+}
+@keyframes rotate-2 {
+  to {
+    -webkit-transform: rotate(225deg);
+            transform: rotate(225deg);
+  }
+}
+@keyframes rotate-3 {
+  to {
+    -webkit-transform: rotate(315deg);
+            transform: rotate(315deg);
+  }
+}
+@keyframes rotate-4 {
+  to {
+    -webkit-transform: rotate(405deg);
+            transform: rotate(405deg);
+  }
+}
+
+@keyframes rotate-5 {
+  to {
+    -webkit-transform: rotate(495deg);
+            transform: rotate(495deg);
+  }
 }
 
 .loaded #loader {
     opacity: 0;
     visibility: hidden;
-    transition: all 1s 0.75s ease-in-out;
+    transition: all 1.25s ease-in-out;
 }
 
 /*
