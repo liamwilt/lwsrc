@@ -43,7 +43,7 @@ a {
           justify-content: center;
   height: 100%;
   width: 100%;
-  background-color: #ccc/*#d8c4ed*/;
+  background-color: #fff/*#d8c4ed*/;
   margin: 0;
   z-index:1000;
 }
@@ -56,9 +56,9 @@ a {
 
 #loago div {
   position: absolute;
-  width: 128px;
-  height: 128px;
-  margin: 16px;
+  width: 100px;
+  height: 100px;
+  margin: 30px;
   border-radius: 13%;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -126,7 +126,11 @@ a {
 .loaded #loader {
     opacity: 0;
     visibility: hidden;
-    transition: all 1.25s ease-in-out;
+    transition: all 1.25s ease-in;
+}
+.loaded #loago {
+    opacity: 0;
+    transition: all 1s ease-out;
 }
 
 /*
@@ -142,17 +146,17 @@ a {
   float: left;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
   .col-xs-15 {
     width: 20%;
     float: left;
   }
   .page-header,p {
-    font-size: 2.55vmin;
-  }
+    font-size: 2.5vmin;
+  } 
 }
 
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .col-sm-15 {
     width: 20%;
     float: left;
