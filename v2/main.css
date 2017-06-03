@@ -48,89 +48,10 @@ a {
   z-index:1000;
 }
 
-#loago {
-  width: 132px;
-  height: 132px;
-  position: relative;
-}
-
-#loago div {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  margin: 15px;
-  border-radius: 13%;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  animation: 3s cubic-bezier(0.66, -0.7, 0.27, 1.6) infinite;
-}
-#loago div:nth-child(1) {
-  background-color: #999;
-  -webkit-animation-name: rotate-5;
-          animation-name: rotate-5;
-}
-#loago div:nth-child(2) {
-  background-color: #a6a6a6;
-  -webkit-animation-name: rotate-4;
-          animation-name: rotate-4;
-}
-#loago div:nth-child(3) {
-  background-color: #b3b3b3;
-  -webkit-animation-name: rotate-3;
-          animation-name: rotate-3;
-}
-#loago div:nth-child(4) {
-  background-color: #bfbfbf;
-  -webkit-animation-name: rotate-2;
-          animation-name: rotate-2;
-}
-#loago div:nth-child(5) {
-  background-color: #ccc;
-  -webkit-animation-name: rotate-1;
-          animation-name: rotate-1;
-}
-
-
-@keyframes rotate-1 {
-  to {
-    -webkit-transform: rotate(135deg);
-            transform: rotate(135deg);
-  }
-}
-@keyframes rotate-2 {
-  to {
-    -webkit-transform: rotate(225deg);
-            transform: rotate(225deg);
-  }
-}
-@keyframes rotate-3 {
-  to {
-    -webkit-transform: rotate(315deg);
-            transform: rotate(315deg);
-  }
-}
-@keyframes rotate-4 {
-  to {
-    -webkit-transform: rotate(405deg);
-            transform: rotate(405deg);
-  }
-}
-
-@keyframes rotate-5 {
-  to {
-    -webkit-transform: rotate(495deg);
-            transform: rotate(495deg);
-  }
-}
-
 .loaded #loader {
     opacity: 0;
     visibility: hidden;
     transition: all 1.25s ease-in;
-}
-.loaded #loago {
-    opacity: 0;
-    transition: all 1s ease-out;
 }
 
 /*
