@@ -5,7 +5,7 @@
 $(document).ready(function() {
     setTimeout(function(){
         $('body').addClass('loaded');
-    }, 3333); 
+    }, 500); 
 });
 
 /**
