@@ -210,3 +210,174 @@ a {
   padding-left: 1em;
   padding-right: 1em;
 }
+
+/*
+* Project Modals
+*/
+.accordion dl {
+    border: 1px solid #ddd;
+}
+.accordion dl:after {
+    display: block;
+    height: 1em;
+    width: 100%;
+    background-color: #b3b3b3;
+}
+
+.accordion dd {
+    background-color: #eee;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.accordion p {
+    padding: 1em 2em 1em 2em;
+}
+
+.accordion {
+    position: relative;
+    background-color: #eee;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 4em 0 0 0;
+}
+
+.accordionTitle {
+    background-color: #ccc;
+    text-align: center;
+    font-weight: 400;
+    padding: 1em;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    -webkit-transition: background-color 0.5s ease-in-out;
+    transition: background-color 0.5s ease-in-out;
+    border-bottom: 1px solid #bfbfbf;
+}
+
+.accordionTitle:before {
+	color: #fff;
+    content: "\f13a";
+	font-family: "FontAwesome";
+    font-size: 1em;
+    line-height: 1em;
+    float: left;
+}
+
+.accordionTitle:hover {
+    background-color: #b3b3b3;
+	color: #fff;
+}
+
+.accordionTitle:focus {
+	color: #fff;
+}
+
+.accordionTitleActive,
+.accordionTitle.is-expanded {
+    background-color: #b3b3b3;
+}
+
+.accordionTitleActive:before,
+.accordionTitle.is-expanded:before {
+    content: "\f139";
+	font-family: "FontAwesome";
+    font-size: 1em;
+    line-height: 1em;
+	float: left;
+}
+
+.accordion-content {
+	color:#000;
+}
+
+.accordionItem {
+    height: auto;
+    overflow: hidden;
+    max-height: 50em;
+    -webkit-transition: max-height 1s;
+    transition: max-height 1s;
+}
+
+@media screen and (min-width: 48em) {
+    .accordionItem {
+        max-height: 15em;
+        -webkit-transition: max-height 0.33s;
+        transition: max-height 0.33s;
+  }
+}
+
+.accordionItem.is-collapsed {
+    max-height: 0;
+}
+
+.no-js .accordionItem.is-collapsed {
+    max-height: auto;
+}
+
+.animateIn {
+  -webkit-animation: accordionIn 0.45s normal ease-in-out both 1;
+          animation: accordionIn 0.45s normal ease-in-out both 1;
+}
+
+.animateOut {
+  -webkit-animation: accordionOut 0.45s alternate ease-in-out both 1;
+          animation: accordionOut 0.45s alternate ease-in-out both 1;
+}
+
+@-webkit-keyframes accordionIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.9) rotateX(-60deg);
+            transform: scale(0.9) rotateX(-60deg);
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes accordionIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.9) rotateX(-60deg);
+            transform: scale(0.9) rotateX(-60deg);
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes accordionOut {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0.9) rotateX(-60deg);
+            transform: scale(0.9) rotateX(-60deg);
+  }
+}
+@keyframes accordionOut {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0.9) rotateX(-60deg);
+            transform: scale(0.9) rotateX(-60deg);
+  }
+}
