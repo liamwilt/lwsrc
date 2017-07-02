@@ -5,7 +5,7 @@
 $(document).ready(function() {
     setTimeout(function(){
         $('body').addClass('loaded');
-    }, 500); 
+    }, 500); 
 });
 
 /**
@@ -137,65 +137,7 @@ function Carousel(el, opts) {
       var px = ((paneWidth * paneCount) / 100) * percent;
       $container.css("left", px+"px");
     }
-  }
-  
-  // dragging X direction
-  function updateContainerOffsetX(deltaX, direction) {
-    var dragOffset = ((100/paneWidth) * deltaX) / paneCount;
-    
-    var slowRight = paneActiveIdx == 0  && direction == Hammer.DIRECTION_RIGHT;
-    var slowLeft = paneActiveIdx == paneCount-1 && direction == Hammer.DIRECTION_LEFT;
-    if (slowLeft || slowRight) {
-        dragOffset *= .4;
-    }
-
-    setContainerOffset(dragOffset + paneActiveOffset);
-  }
-  
-  // set nearest pane on touch release
-  function onPressRelease(deltaX, direction) {
-    if(Math.abs(deltaX) > paneWidth / 2) {
-      if(deltaX > 0) {
-        self.prev();
-      } else {
-        self.next();
-      }
-    } else {
-      self.throttledShowPane(paneActiveIdx, true);
-    }
-  }
-  
-  // hammer events
-  function hammerTime(ev) {
-    switch(ev.type) {
-      case 'panmove': 
-        updateContainerOffsetX(ev.deltaX, ev.direction);
-        break;
-      case 'swipeleft':
-        self.next();
-        break;
-      case 'swiperight':
-        self.prev();
-        break;
-    }
-  }
-  
-  // initialize hammer
-  
-  var mc = new Hammer.Manager(el, {
-    dragLockToAxis: true,
-    dragBlockHorizontal: true
-  });
-  
-  mc.add(new Hammer.Pan({ threshold: 5, pointers: 0 }));
-  mc.add(new Hammer.Swipe().recognizeWith(mc.get('pan')));
-  mc.on("swipeleft swiperight panleft panright panstart panmove", hammerTime);
-  mc.on("hammer.input", function (ev) {
-    if (ev.isFinal) {
-      onPressRelease(ev.deltaX, ev.direction);
-    }
-  });
-  
+  }  
 }
 
 var container = document.getElementById("carousel");
