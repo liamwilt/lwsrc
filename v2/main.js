@@ -1,7 +1,6 @@
 /**
-* LOADER
+* Loader
 */
-
 $(document).ready(function() {
     setTimeout(function(){
         $('body').addClass('loaded');
@@ -9,13 +8,8 @@ $(document).ready(function() {
 });
 
 /**
-* SITE
+* Site
 */
-
-/**
-* requestAnimationFrame polyfill
-*/
-
 (function() {
   var lastTime = 0;
   var vendors = ['ms', 'moz', 'webkit', 'o'];
@@ -41,12 +35,9 @@ $(document).ready(function() {
     };
 }());
 
-
-
 /**
 * Carousel class
 */
-
 function Carousel(el, opts) {
   
   var self = this;
@@ -137,7 +128,7 @@ function Carousel(el, opts) {
       var px = ((paneWidth * paneCount) / 100) * percent;
       $container.css("left", px+"px");
     }
-  }  
+  }
 }
 
 var container = document.getElementById("carousel");
@@ -148,4 +139,38 @@ c.init();
 $('[data-nav=""]').on("click", function () { 
   var $self = $(this);
   c.throttledShowPane($self.data("show"), true);
+});
+
+/*
+* AV_Gallery
+*/
+$('.pug-item').magnificPopup({
+    type: 'image',
+    closeBtnInside: false,
+    closeOnContentClick: false,
+    mainClass: 'mfp-no-margins mfp-with-zoom',
+    
+        callbacks: {
+            open: function() {
+                var self = this;
+                self.wrap.on('click.pinhandler', 'img', function() {
+                    self.wrap.toggleClass('mfp-force-scrollbars');
+                });
+            },
+            
+            beforeClose: function() {
+                this.wrap.off('click.pinhandler');
+                this.wrap.removeClass('mfp-force-scrollbars');
+            }
+        },
+    
+    image: {
+        verticalFit: false
+    },
+    
+    zoom: {
+        enabled: true,
+        duration: 300
+    }
+
 });

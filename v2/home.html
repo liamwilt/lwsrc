@@ -29,13 +29,15 @@
     <meta name="msapplication-TileImage" content="/images/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="main.css">
 
@@ -51,27 +53,27 @@
 
             <!-- 1 -->
             <div class="col-xs-15 col-xs-3">
-                <a href="#" data-nav="" data-show="0">ME</a>
+                <a href="#" data-nav="" data-show="0" class="nav-links">ME</a>
             </div>
 
             <!-- 2 -->
             <div class="col-xs-15 col-xs-3">
-                <a href="#" data-nav="" data-show="1">CV</a>
+                <a href="#" data-nav="" data-show="1" class="nav-links">CV</a>
             </div>
 
             <!-- 3 -->
             <div class="col-xs-15 col-xs-3">
-                <a href="#" data-nav="" data-show="2">AV</a>
+                <a href="#" data-nav="" data-show="2" class="nav-links">AV</a>
             </div>
 
             <!-- 4 -->
             <div class="col-xs-15 col-xs-3">
-                <a href="#" data-nav="" data-show="3">RD</a>
+                <a href="#" data-nav="" data-show="3" class="nav-links">RD</a>
             </div>
 
             <!-- 5 -->
             <div class="col-xs-15 col-xs-3">
-                <a href="#" data-nav="" data-show="4">RR</a>
+                <a href="#" data-nav="" data-show="4" class="nav-links">RR</a>
             </div>
 
             <!-- Bar -->
@@ -89,25 +91,26 @@
             <!-- Page 1 -->
             <li class="page page-1">
 
-                <header class="page-header" style="background:#cccccc;">
-                    <div class="row text-center">
-                        <h1 class="page-header__title" style="color: #fff;">about me</h1>
-                    </div>
-                </header>
-                    
-                <div class="container-a">
-	
-                    <div class="card">
-                        <div class="card-image" style="background-image: url(images/pageImg/a1.jpg);">
-                        </div>
-                        <div class="card-description">
-                            <h1>Welcome to Violetville</h1>
-                            <p>A space for <span style="color:#00b4b4;">liam wilt</span> and <span style="color:#00b45a">david kisler</span> to display their research and interests.</p>
-                            <p>Feel free to review our content via the lettered navigation links above.</p>
-                        </div>
-                    </div>
-                    
+            <header class="page-header" style="background:#cccccc;">
+                <div class="row text-center">
+                    <h1 class="page-header__title" style="color: #fff;">about me</h1>
                 </div>
+            </header>
+                
+            <div class="container-a">
+	
+                <div class="card">
+                    <div class="card-image" style="background-image: url(images/pageImg/a1.jpg);">
+                    </div>
+                    <div class="card-description">
+                        <h1>Welcome to Violetville</h1>
+                        <p>A space for <span style="color:#00b4b4;">liam wilt</span> and <span style="color:#00b45a">david kisler</span> to display their research and interests.</p>
+                        <p>We’ve a fondness for <a href="http://www.mass.gov/eohhs/consumer/disability-services/vocational-rehab/rehabilitation-tech.html" target="_blank" class="green-link">rehabilitative technology</a>, <a href="https://en.wikipedia.org/wiki/Visual_neuroscience" target="_blank" class="blue-link">the neurosciences</a>, <a href="https://en.wikipedia.org/wiki/Game_design" target="_blank" class="green-link">game design</a>, <a href="https://en.wikipedia.org/wiki/Supervised_learning" target="_blank" class="blue-link">supervised learning</a>, and tea.</p>
+                        <p>Feel free to review our content via the lettered navigation links above.</p>
+                    </div>
+                </div>
+                
+            </div>
 
             </li>
 
@@ -130,6 +133,85 @@
                         <h1 class="page-header__title" style="color: #fff;">audio\visual</h1>
                     </div>
                 </header>
+
+                <div class="masonry">
+                    
+                    <div class="popup-gallery">
+                        
+                        <div class="item">
+                            <a href="images/pageImg/av1.png" class="pug-item">
+                                <img src="images/pageImg/av1.png">
+                            </a>
+                        </div>
+                        
+                        <div class="item">
+                            <a href="images/pageImg/av2.png" class="pug-item">
+                                <img src="images/pageImg/av2.png">
+                            </a>  
+                        </div>
+                        
+                        <div class="item">
+                            <a href="images/pageImg/av3.png" class="pug-item">
+                                <img src="images/pageImg/av3.png">
+                            </a>      
+                        </div>
+                        
+                        <div class="item">
+                            <a href="images/pageImg/av4.png" class="pug-item">
+                                <img src="images/pageImg/av4.png">
+                            </a>      
+                        </div>
+                        
+                        <div class="item">
+                            <a href="images/pageImg/av5.png" class="pug-item">
+                                <img src="images/pageImg/av5.png">
+                            </a>      
+                        </div>
+                        
+                        <div class="item">
+                            <a href="images/pageImg/av6.png" class="pug-item">
+                                <img src="images/pageImg/av6.png">
+                            </a>      
+                        </div>
+                        
+                        <div class="item">
+                            <a href="images/pageImg/av7.png" class="pug-item">
+                                <img src="images/pageImg/av7.png">
+                            </a>      
+                        </div>
+                        
+                        <div class="item">
+                            <a href="images/pageImg/av8.jpg" class="pug-item">
+                                <img src="images/pageImg/av8.jpg">
+                            </a>      
+                        </div>
+                        
+                        <div class="item">
+                            <a href="images/pageImg/av9.jpg" class="pug-item">
+                                <img src="images/pageImg/av9.jpg">
+                            </a>      
+                        </div>
+                        <div class="item">
+                            <a href="images/pageImg/av10.png" class="pug-item">
+                                <img src="images/pageImg/av10.png">
+                            </a>      
+                        </div>
+                        
+                        <div class="item">
+                            <a href="images/pageImg/av11.png" class="pug-item">
+                                <img src="images/pageImg/av11.png">
+                            </a>      
+                        </div>
+                        
+                        <div class="item">
+                            <a href="images/pageImg/av12.png" class="pug-item">
+                                <img src="images/pageImg/av12.png">
+                            </a>      
+                        </div>
+                        
+                    </div>
+                    
+                </div>
 
             </li>
 
