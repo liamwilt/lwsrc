@@ -8,7 +8,7 @@ $(document).ready(function() {
 });
 
 /**
-* Site
+* Requesting Animation Frames
 */
 (function() {
   var lastTime = 0;
@@ -101,7 +101,7 @@ function Carousel(el, opts) {
   };  
   
   
-  // set pane and container sizes
+  // Set pane and container sizes
   function setPaneDimensions() {
     paneWidth = $el.width();
     
@@ -112,7 +112,7 @@ function Carousel(el, opts) {
     $container.width(paneWidth*paneCount);
   }
   
-  // adjust container to active pane
+  // Adjust container to active pane
   function setContainerOffset(percent, animated) {
     $container.removeClass("animate");
     
@@ -135,14 +135,33 @@ var container = document.getElementById("carousel");
 var c = new Carousel(container);
 c.init();
 
-// Nav clicks
+// Carousel Nav clicks
 $('[data-nav=""]').on("click", function () { 
   var $self = $(this);
   c.throttledShowPane($self.data("show"), true);
 });
 
 /*
-* AV_Gallery
+* ME_Card Conditional Effect
+*/
+if($(window).width() <= 480){  
+    $('#switchButton').click(function(e){
+        e.preventDefault();
+        $('#card-container').fadeOut(500, "linear", function(){
+            $('#text-container').fadeIn(500, "linear");
+        });
+    });
+    
+    $('#swatchButton').click(function(e){
+        e.preventDefault();
+        $('#text-container').fadeOut(500, "linear", function(){
+            $('#card-container').fadeIn(500, "linear");
+        });
+    });
+}
+
+/*
+* AV_Gallery Magnific Popup Controls
 */
 $('.pug-item').magnificPopup({
     type: 'image',
@@ -172,5 +191,4 @@ $('.pug-item').magnificPopup({
         enabled: true,
         duration: 300
     }
-
 });
