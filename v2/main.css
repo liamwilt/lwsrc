@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
 	width: 90%;
 	max-width: 20rem;
 	text-decoration: none;
-	box-shadow: 0 6px 0px 0px #f7f7f7, 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	box-shadow: 0 8px 0px 0px #f7f7f7, 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 	transition: 500ms ease-in-out;
 }
 
@@ -709,7 +709,7 @@ section .images .small:last-of-type {
 }
 
 .page-header {
-  padding: 3em 0em 3.5em 0em;
+  padding: 2em 0em 2em 0em;
 }
 .page-header__title {
   font-size: 3.75em;
