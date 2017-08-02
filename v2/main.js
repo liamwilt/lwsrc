@@ -142,25 +142,6 @@ $('[data-nav=""]').on("click", function () {
 });
 
 /*
-* ME_Card Conditional Effect
-*/
-if($(window).width() <= 480){  
-    $('#switchButton').click(function(e){
-        e.preventDefault();
-        $('#card-container').fadeOut(500, "linear", function(){
-            $('#text-container').fadeIn(500, "linear");
-        });
-    });
-    
-    $('#swatchButton').click(function(e){
-        e.preventDefault();
-        $('#text-container').fadeOut(500, "linear", function(){
-            $('#card-container').fadeIn(500, "linear");
-        });
-    });
-}
-
-/*
 * AV_Gallery Magnific Popup Controls
 */
 $('.pug-item').magnificPopup({
