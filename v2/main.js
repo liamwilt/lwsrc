@@ -142,6 +142,13 @@ $('[data-nav=""]').on("click", function () {
 });
 
 /*
+* RR Span Link
+*/
+$(".spanlink").click(function() {
+  window.open('http://www.theyshootpictures.com/');
+});
+
+/*
 * AV_Gallery Magnific Popup Controls
 */
 $('.pug-item').magnificPopup({
