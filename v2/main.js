@@ -141,15 +141,34 @@ $('[data-nav=""]').on("click", function () {
   c.throttledShowPane($self.data("show"), true);
 });
 
+
 /*
-* RR Span Link
-*/
-$(".spanlink").click(function() {
-  window.open('http://www.theyshootpictures.com/');
+* ME Image Swap Feature
+
+$('img').on({
+    'click': function() {
+         var src = ($(this).attr('src') === 'images/pageImg/me.jpg')
+            ? 'images/pageImg/us.jpg'
+            : 'images/pageImg/me.jpg';
+         $(this).attr('src', src);
+    }
+});*/
+$('#me').click(function(e){
+    e.preventDefault();
+    $('#me').fadeOut(666, "swing", function(){
+        $('#us').fadeIn(666, "swing");
+    });
+});
+    
+$('#us').click(function(e){
+    e.preventDefault();
+    $('#us').fadeOut(666, "swing", function(){
+        $('#me').fadeIn(666, "swing");
+    });
 });
 
 /*
-* AV_Gallery Magnific Popup Controls
+* AV Gallery Magnific Popup Controls
 */
 $('.pug-item').magnificPopup({
     type: 'image',
@@ -179,4 +198,17 @@ $('.pug-item').magnificPopup({
         enabled: true,
         duration: 300
     }
+});
+
+/*
+* RR Span Links
+*/
+$(".sp01").click(function() {
+  window.open('https://mubi.com/users/77504');
+});
+$(".sp02").click(function() {
+  window.open('https://www.criterion.com/');
+});
+$(".sp03").click(function() {
+  window.open('http://www.theyshootpictures.com/');
 });

@@ -105,7 +105,10 @@
                 
                 <div class="container-me">
                     <figure class="flex">
-                        <div></div>
+                        <div id="banner">
+                            <img id="me" src="images/pageImg/me.jpg" />
+                            <img id="us" src="images/pageImg/us.jpg" />
+                        </div>
                         <div>
                             <h1>Welcome to Violetville</h1>
                             <p class="card-paragraph">A space drawn for the display of personal research and interests.</p>
@@ -171,7 +174,7 @@
                         <div class="content-container">
                             <h2 class="category-titles">Research Experience</h2><hr>
                             
-                            <p class="primary-titles">Immersive Virtual Environment Testing Area <span class="location">| Bethesda, MD</span></p>
+                            <p class="primary-titles">Immersive Virtual Environment Testing Area (NIH) <span class="location">| Bethesda, MD</span></p>
                             <p class="category-details">01/2015 - Present | Lab Manager </p>
                             <p class="category-description">
                                 As laboratory manager of the Immersive Virtual Environment Testing Area on the main campus of the National Institutes of Health, I collaborate with intra- and extramural investigators seeking the use of our technologies in the design and development of research protocols. I am also responsible for the implementation of research experiments, management and analysis of data, as well as the integration and maintenance of lab technologies, including virtual or augmented reality software/hardware, EDA (skin conductance), EEG, or EKG, as well as facial expression-based emotion recognition software/hardware. 
@@ -180,7 +183,7 @@
                             <p class="primary-titles">American University Computer Science Department <span class="location">| Washington, DC</span></p>
                             <p class="category-details">5/2012 - 12/2014 | Research Technician </p>
                             <p class="category-description">
-                                With Dr. Bei Xiao, I developed a three-dimensional virtual world to investigate several psychophysical questions concerning the human understanding of fabric qualities (e.g. bend, spring, texture). The virtual world prompted users to compare and judge sets of fabrics on their visual properties and motion mechanics over 500 trials. For each trial and fabric, internal physics and texture components were modified. As a result, the motion mechanics and perceptual quality of each fabric was altered (i.e. some fabrics appeared as silk but behaved like denim, and vice versa, while under the influence of external forces). Participants were asked to judge which fabric of any given pair exhibited greater values of the bend or spring qualities. Data was examined using multi-dimensional scaling.
+                                With Dr. Bei Xiao, I developed a three-dimensional virtual world to investigate several psychophysical questions concerning the human understanding of fabric qualities (e.g. bend, spring, texture). The virtual world prompted users to compare and judge sets of fabrics on their visual properties and motion mechanics over 500 trials. For each trial and fabric, internal physics and texture components were modified. As a result, the motion mechanics and perceptual qualities of each fabric were altered (i.e. some fabrics appeared as silk but behaved like denim, and vice versa, while under the influence of external forces). Participants were asked to judge which fabric of any given pair exhibited greater values of the bend or spring qualities. Data was examined using multi-dimensional scaling.
                             </p>
                             
                             <p class="primary-titles">American University Vision Science Lab <span class="location">| Washington, DC</span></p>
@@ -399,8 +402,8 @@
                         </div>
                         <div class = "images">
                             <figure class="large" style="background-image: url('images/pageImg/e1.jpg')"></figure>
-                            <figure class="small" style="background-image: url('images/pageImg/e2.jpg')"></figure>
                             <figure class="small green-blank" style="background: rgba(0, 180, 90, 0.5)"></figure>
+                            <figure class="small" style="background-image: url('images/pageImg/e2.jpg')"></figure>
                             <figure class="small green-blank" style="background: rgba(0, 180, 90, 0.5)"></figure>
                         </div>
                     </section>
@@ -414,8 +417,8 @@
                         <div class = "images">
                             <figure class="large" style="background-image: url('images/pageImg/a1.jpg')"></figure>
                             <figure class="small blue-blank" style="background: rgba(0, 180, 180, 0.5)"></figure>
-                            <figure class="small blue-blank" style="background: rgba(0, 180, 180, 0.5)"></figure>
                             <figure class="small" style="background-image: url('images/pageImg/a2.png')"></figure>
+                            <figure class="small blue-blank" style="background: rgba(0, 180, 180, 0.5)"></figure>
                         </div>
                     </section>
                     
@@ -436,13 +439,13 @@
                     <section>
                         <div class = "info">
                             <h1>XPL</h1>
-                            <p class="info-paragraph">XPL is an immersive virtual environment designed for the analysis of manual proprioception and motor control. Subjects perform a series of eye-hand coordination tasks, similar to Pong or Tennis. For use in these activities, the user controls a virtual paddle via a Leap Motion controller.</p>
-                            <p class="info-paragraph">Hand position data is concurrently captured and stored as part of the output, allowing for a measure of motor control analysis. As "difficulty" scales, the speed of the stimulus object increases and the opacity of the in-game controller decreases.</p>
+                            <p class="info-paragraph">XPL is a virtual environment designed for the analysis of proprioception and motor control. Users perform a series of eye-hand coordination tasks, similar to Pong or Tennis. For success in these activities, the user controls a virtual paddle via a Leap Motion sensor bar.</p>
+                            <p class="info-paragraph">Hand position data are concurrently captured and stored as part of the output, allowing for a measure of motor control analysis. As "difficulty" scales, the speed of the stimulus object increases while the opacity of the in-game virtual paddle decreases.</p>
                         </div>
                         <div class = "images">
                             <figure class="large" style="background-image: url('images/pageImg/x1.jpg')"></figure>
-                            <figure class="small" style="background-image: url('images/pageImg/x2.gif')"></figure>
                             <figure class="small blue-blank" style="background: rgba(0, 180, 180, 0.5)"></figure>
+                            <figure class="small" style="background-image: url('images/pageImg/x2.gif')"></figure>
                             <figure class="small blue-blank" style="background: rgba(0, 180, 180, 0.5)"></figure>
                         </div>
                     </section>
@@ -467,38 +470,42 @@
                         <a class="box box-big">
                             <i class="fa fa-camera-retro fa-2x" aria-hidden="true"></i>
                             <h1 class="title">Film</h1>
-                            <p class="box-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="spanlink">Necessitatibus minus</span> nemo sint inventore minima quam rerum consequatur nam soluta labore. Sunt consequatur a maxime quis impedit provident sint omnis incidunt.</p>
-                            <p class="box-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus minus nemo sint inventore minima quam rerum consequatur nam soluta labore. Sunt consequatur a maxime quis impedit provident sint omnis incidunt.</p>
+                            <p class="box-paragraph">Film was my first love. I remember lounging with my parents, far too young, enjoying the likes of <i>2001: A Space Odyssey</i>, <i>Apocalypse Now</i>, and <i>Lawrence of Arabia</i>. Sharing equal time with Saturday morning cartoons, we treated ourselves to warmed blankets, all-day breakfasts, <i>Sans Soleil</i> and <i>Koyaanisqatsi</i>. They were our rare and pleasant vacations from the norm.</p>
+                            <p class="box-paragraph">Film taught me the joy of intellectual challenge, of interpretation and creativity. It continues to inspire and serves me as a medium more confronting and engaging than any other art form. I routinely peruse <span class="spanlink sp03"><i>They Shoot Pictures, Don't They</i></span> for consult and I own an embarrassing number of products from <span class="spanlink sp02">Criterion</span>. You can find a short list of the films that preoccupy me at <span class="spanlink sp01">MUBI</span>.</p>
                         </a>
 
                         <a class="box">
                             <i class="fa fa-file-audio-o fa-2x" aria-hidden="true"></i>
                             <h1 class="title">Music</h1>
-                            <p class="box-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus minus nemo sint inventore minima quam rerum consequatur nam soluta labore. Sunt consequatur a maxime quis impedit provident sint omnis incidunt.</p>
+                            <p class="box-paragraph">My fourth grade teacher entered the classroom and presented to our young cohort a small cassette player. She asked us to listen for <i>a sound we enjoyed</i>. She pressed play and on came one instrument after the next, each in a solo. I raised my hand during the sound of a woodwind, a clarinet. I chose it because it sounded like water. It relaxed me. Later that year, I held my own, rarely setting it down thereafter.</p> 
+                            <p class="box-paragraph">My days are filled mostly with Daft Punk or Kendrick Lamar now, but it was that one day that started my life of auditions and rehearsals. I still play a bit, but mostly in the lower octaves, close to where the water was I suppose.</p>
                         </a>
 
                         <a class="box">
                             <i class="fa fa-hand-spock-o fa-2x" aria-hidden="true"></i>
                             <h1 class="title">Volunteer</h1>
-                            <p class="box-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus minus nemo sint inventore minima quam rerum consequatur nam soluta labore. Sunt consequatur a maxime quis impedit provident sint omnis incidunt.</p>
+                            <p class="box-paragraph">...</p>
                         </a>
 
                         <a class="box box-big">
                             <i class="fa fa-steam-square fa-2x" aria-hidden="true"></i>
                             <h1 class="title">Games</h1>
-                            <p class="box-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus minus nemo sint inventore minima quam rerum consequatur nam soluta labore. Sunt consequatur a maxime quis impedit provident sint omnis incidunt.</p>
+                            <p class="box-paragraph">It is no exaggeration to say that gameplay changed my life. It gave me a relationship with my brother; it fostered unforgettable moments with my late friend; it provided me with the logic, programming, and UX skills that I use daily. In the review or creation of interactive video games, I have found connection and engagement, and I aim to provide comparable benefits to others.</p>
+                            <p class="box-paragraph">When not developing for side projects, I can be found staring into any one of the Nintendo consoles, enjoying their levity, polish, and palette. I have a Steam account, but I must admit that it is used mostly for the creation of worlds in Terraria. Linux gaming does not offer as many options as other OS's so I stick with the experiences that give me the <i>most</i> hundreds-of-hours.</p>
                         </a>
 
                         <a class="box">
                             <i class="fa fa-anchor fa-2x" aria-hidden="true"></i>
                             <h1 class="title">Swim</h1>
-                            <p class="box-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus minus nemo sint inventore minima quam rerum consequatur nam soluta labore. Sunt consequatur a maxime quis impedit provident sint omnis incidunt.</p>
+                            <p class="box-paragraph">I cannot remember not knowing how to swim. I recall learning, however, when I was four years old, and fairing rather well at not drowning. I joined a summer swim team when I was six and began year-round competition at nine.</p> 
+                            <p class="box-paragraph">Two-a-days, as we called them, began in High School, and by the time I reached University, I was practicing nine to ten times a week. In retrospect, things escalated rather quickly. I still swim for exercise, but the days of training before dawn are behind me, as is the persistent scent of chlorine.</p>
                         </a>
 
                         <a class="box">
                             <i class="fa fa-cube fa-2x" aria-hidden="true"></i>
                             <h1 class="title">3D Creation</h1>
-                            <p class="box-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus minus nemo sint inventore minima quam rerum consequatur nam soluta labore. Sunt consequatur a maxime quis impedit provident sint omnis incidunt.</p>
+                            <p class="box-paragraph">My interest in maths is in many ways a direct result of my love for 3-D modeling. I never <i>really</i> got it until I could see it. That is, models made maths apparent. What was previously an opaque space became one in which I could learn & play.</p> 
+                            <p class="box-paragraph">I've always been predisposed to taking-the-thing-apart, and with modeling, to take any thing apart is to understand the thing's graphical and therefore mathematical assemblage. It has been a joy in my work, and a number of my own renders can be found in the AV section. Feel free to review them!</p>
                         </a>
 
                     </div>
