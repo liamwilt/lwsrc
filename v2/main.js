@@ -196,7 +196,7 @@ $('.pug-item').magnificPopup({
     
     zoom: {
         enabled: true,
-        duration: 300
+        duration: 333
     }
 });
 
@@ -212,3 +212,16 @@ $(".sp02").click(function() {
 $(".sp03").click(function() {
   window.open('http://www.theyshootpictures.com/');
 });
+$(".sp04").click(function() {
+  window.open('https://www.codeclubworld.org/');
+});
+$(".sp05").click(function() {
+  window.open('https://code.org/help');
+});
+$(".sp06").click(function() {
+  window.open('http://childrensinn.org/');
+});
+$(".sp07").click(function() {
+  window.open('https://terraria.org/');
+});
+

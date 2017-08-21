@@ -86,34 +86,54 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .blue-link {
-  text-decoration: none;
-  color: #3f3f41;
-  -webkit-transition: all 333ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  transition: all 333ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    text-decoration: none;
+    color: #3f3f41;
+    -webkit-transition: all 333ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: all 333ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .blue-link:visited {
-  color: #3f3f41;
+    color: #3f3f41;
 }
 
 .blue-link:hover {
-  color: #00b4b4;
+    color: #00b4b4;
+    cursor: pointer;
 }
 
 .green-link {
-  text-decoration: none;
-  color: #3f3f41;
-  -webkit-transition: all 333ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  transition: all 333ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    text-decoration: none;
+    color: #3f3f41;
+    -webkit-transition: all 333ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: all 333ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 
 .green-link:visited {
-  color: #3f3f41;
+    color: #3f3f41;
 }
 
 .green-link:hover {
-  color: #00b45a;
+    color: #00b45a;
+    cursor: pointer;
 }
+
+.purple-link {
+    text-decoration: none;
+    color: #3f3f41;
+    -webkit-transition: all 333ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: all 333ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.purple-link:visited {
+    color: #3f3f41;
+}
+
+.purple-link:hover {
+    color: #5a00b4;
+    cursor: pointer;
+}
+
+
 
 @media all and (max-width: 769px) {
   .flex {
@@ -573,18 +593,6 @@ section .images .small:last-of-type {
 }
 .boxes .box-big {
   flex: 1 1 40em;
-}
-
-.spanlink {  
-   text-decoration:none;
-   cursor:pointer; 
-   color: #3f3f41;
-   -webkit-transition: all 333ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
-   transition: all 333ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
-   }
-
-.spanlink:hover {
-   color:#00b45a;
 }
 
 /*
