@@ -1,8 +1,8 @@
 # lwsrc
-Documenting the creation and maintenance of a website.
+Documenting the creation, maintenance, and closure of a website:
 
 http://liamwilt.com/
 
-Admittedly, the primary use of Git software is in version control. In this instance however, it may better serve (me) as an historical account, offering a measure of transparency into my learning and development. Here you will find contributions of HTML, CSS, and JavaScript, each logged as a commit to this repository. Each commit also represents a near one-to-one reflection of the alterations made directly to the linked site. Feel free to review all available files.
+Admittedly, the primary use of Git software is in version control. Here however, it better served (me) as an historical account, offering a window into my learning and development. Each commit represented a near one-to-one reflection of the changes made directly to the linked site prior to its removal. Feel free to review all available files.
 
-If you wish to review any additional excursions into website development, please visit my [CodePen](http://codepen.io/liamwilt/).
+If you wish to review any additional web creations, please visit my [CodePen](https://codepen.io/wi11iamk).
